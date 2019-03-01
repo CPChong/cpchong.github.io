@@ -12,13 +12,16 @@
 
 <script>
 	var myData = "";
-	var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json'; 
+	var staticUrl = 'https://raw.githubusercontent.com/CPChong/cpchong.github.io/master/Acticity%202%20Work/Data/HIVinfection.json'; 
+
+     -
 	$.getJSON(staticUrl, function(data) {
         
         console.log(data)
         console.log(data.fact[1].dims.COUNTRY);
         console.log(data.fact[1].dims.GHO);
         console.log(data.fact[1].dims.YEAR);
+        
  		console.log(data.fact[31].dims.COUNTRY);
         console.log(data.fact[31].dims.GHO);
         console.log(data.fact[31].dims.YEAR);

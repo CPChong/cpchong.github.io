@@ -1,1 +1,33 @@
-stage4JSON.html
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Stage 3 JSON Activity</title>
+</head>
+<body>
+
+
+
+
+
+<script>
+	var myData = "";
+	var staticUrl = 'https://raw.githubusercontent.com/CPChong/cpchong.github.io/master/Acticity%202%20Work/Data/HIVinfection.json'; 
+
+     -
+	$.getJSON(staticUrl, function(data) {
+        
+        country1Data = data.fact[1].Value;
+        console.log(country1Data);
+        loc1 = countryData.indexOf("[");
+        console.log(loc1);
+        val1 = country1Data.substring(0,loc1);
+        console.log(val1); 
+        
+    
+    });
+
+    
+</script>
+</body>
+</html>

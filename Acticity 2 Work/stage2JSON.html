@@ -10,15 +10,14 @@
 
 <script>
 
-	window.onload = function() {
-	    if (window.jQuery) {  
-	        // jQuery is loaded  
-	        alert("Yeah!");
-	    } else {
-	        // jQuery is not loaded
-	        alert("Doesn't Work");
-	    }
-	}
+	var myData = "";
+	var staticUrl = 'https://raw.githubusercontent.com/CPChong/cpchong.github.io/master/Acticity%202%20Work/Data/HIVinfection.json'; 
+
+	$.getJSON(staticUrl, function(data) {
+
+
+	    });
+
 </script>
-</body>
+</body> 
 </html>
