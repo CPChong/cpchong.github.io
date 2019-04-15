@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="SC.css">
+
+
+<div class="topbar">
+  <div class="topnav">
+    <a href="#home">Home</a>
+    <a href="#page2">Page 1</a>
+    <a class="active" href="#page2">Page 2</a>
+    <a href="#page3">Page 3</a>
+    <input type="text" placeholder="Search...">
+  </div>
+</div>
+
+<div class = "content">
+
+  <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Images/11wide.png" style="width:100%" style="height:100%">
+          <div class="text">Sustainable Cities</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Images/07wide.png" style="width:100%" style="height:100%">
+          <div class="text">Affordable and Clean Energy</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Images/E_SDG goal 03wide.png" style="width:27%" style="height:27%" >
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+</div>
+
+
+
+<hr>
+
+  <center>  <font size="5">Brief Introduction</font>  </center>
+  
+    <p> <font size="3"> Affordable and Clean Energy has been steadily increasing over the past few decasedes and the problem arised with it has been even more concerning. While more and more people are dependant on energy, a large problem is how this energy is being produced and if it is renewable, clean and affordable. Lots of energy is produced by the bruning of fossil fuels, and this is clearly not the cleanest solution. These solutions include: Wave Energy, Biofuels, Geotermal Power, Wind Energy and Tidal Energy. One of the leading cities to induce renewable energy methods is British Columbia. They have set an ambitious EV charging infrastructure strategy, enacted a Zero Emissions Building Plan and have agreed to expand its Neighbourhood Energy Utility. </font></p>
+</p>
+
+<hr>
+
+</head>
+  
+<div class="side1" style="display:flex;flex-direction:row;">
+
+    <div class="flex-container">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="images/11square.png" alt="Avatar" style="width:300"
+              px; height:300px;"/>
+          </div>
+          <div class="flip-box-back" style="background-color: #F49D31;">
+          <h3>Zero Hunger</h3>
+          <p> <font size="5"> A City Designed Around Social, Economic and Environmental Impact </font></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="images/11square.png" alt="Avatar" style="width:300"
+            px; height:300px;"/>
+        </div>
+        <div class="flip-box-back" style="background-color: #F49D31;">
+        <h3>Zero Hunger</h3>
+        <p> <font size="5"> Energy Contributes To Around 60% To Greenhouse Gas Emissions </font></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div style="margin:auto;">
+   <font size="5">Point From Information Notes</font> 
+
+
+    <p> <font size = "4"> 1) Ideally, a sustainable city creates an enduring way of life across ecology, economics, </font></p>
+
+    <p> <font size = "4">politics and culture.
+   </font></p>
+
+
+
+    <p> <font size = "4"> 2) The citizens must be dedicated to the minimization of required inputs of energy,
+   </font></p>
+
+    <p> <font size = "4"> water, food, waste, output of heat, air pollution - Co2, methane, and water pollution </font></p>
+
+
+
+    <p> <font size = "4"> 3) A sustainable city should be able to 1) Feed itself sustainably, with a reliance on the  </font></p>
+
+    <p> <font size = "4"> countryside 2) Power itself with renewable energy. </font></p>
+
+
+  </div>
+
+</div>
+
+
+<hr>
+
+      <div style = "margin:auto;"
+        <center>  <font size="5">Additional Research Links</font>  </center>
+
+        <p> <font size="3"> "Sustainable City." En.Wikipedia.Org, 2019, https://en.wikipedia.org/wiki/Sustainable_city. </font></p>
+
+        <p> <font size="3"> "Five Sustainable Cities Making A Difference For The Planet." Climate Reality, 2017, https://www.climaterealityproject.org/blog/five-sustainable-cities-making-difference-planet. </font></p>
+        
+      </div>
+
+<hr>
+
+
+
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+</body>
+
+
+</html> 

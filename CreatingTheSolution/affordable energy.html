@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="#page1">Page 1</a>
+  <a href="#page2">Page 2</a>
+  <a href="#page3">Page 3</a>
+  <input type="text" placeholder="Search...">
+</div>
+
+<div class = "content">
+
+  <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Images/07wide.png" style="width:27%" style="height:27%">
+          <div class="text">Affordable and Clean Energy</div>
+        </div>
+
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Images/11wide.png" style="width:27%" style="height:27%">
+          <div class="text">Sustainable Cities</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Images/E_SDG goal 03wide.png" style="width:27%" style="height:27%" >
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+<hr>
+<div class = "content">
+  <div class = "flex-container">
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="images/E_SDG goals_icons-individual-rgb-07.png" alt="Avatar" style="width:300"
+            px; height:300px;"/>
+        </div>
+        <div class="flip-box-back" style="background-color: #fdb713;">
+        <h3>Zero Hunger</h3>
+        <p> 1.1 Billion People Live Without Electricity </p>
+      </div>
+    </div>
+  </div>
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="images/E_SDG goals_icons-individual-rgb-07.png" alt="Avatar" style="width:300"
+            px; height:300px;"/>
+        </div>
+        <div class="flip-box-back" style="background-color: #fdb713;">
+        <h3>Zero Hunger</h3>
+        <p> Energy Contributes To Around 60% to greenhouse gas emissions </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+</body>
+
+
+</html> 
